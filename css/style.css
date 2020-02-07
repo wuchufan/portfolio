@@ -23,6 +23,24 @@
   .container--column__items {
     margin-bottom: 10rem; }
 
+.container--row {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .container--row__items:not(:last-child) {
+    margin-right: 2rem; }
+
+.footer {
+  height: 7rem;
+  background-color: #1F2833;
+  border-top: 1px solid #45A29E; }
+  .footer__copyright {
+    font-size: 2rem;
+    font-family: "Montserrat SemiBold";
+    color: #C5C6C7; }
+
 *,
 *::after,
 *::before {
@@ -91,11 +109,23 @@ body {
 .u-margin-bottom-large {
   margin-bottom: 10rem !important; }
 
+.u-margin-bottom-ultra {
+  margin-bottom: 15rem !important; }
+
 .u-margin-vertical-small {
   margin: 1rem 0 !important; }
 
 .u-text-center {
   text-align: center !important; }
+
+.u-height-max {
+  height: 100% !important; }
+
+.u-container-vertical-center {
+  align-items: center !important; }
+
+.u-text-no-deco {
+  text-decoration: none !important; }
 
 @keyframes tooltipAppear {
   0% {
@@ -196,9 +226,27 @@ body {
     font-size: 1.6rem;
     margin: 0 2rem; }
 
+.navigation__list {
+  display: flex;
+  flex-direction: row; }
+
+.navigation__item {
+  list-style: none; }
+  .navigation__item:not(:last-child) {
+    margin-right: 3rem; }
+  .navigation__item a,
+  .navigation__item a:link,
+  .navigation__item a:visited {
+    text-decoration: none;
+    color: #C5C6C7;
+    font-family: "Montserrat SemiBold";
+    font-size: 2rem; }
+
 .section-skills {
   padding: 18rem 0; }
 
 .section-projects {
-  height: 100vh;
   padding: 18rem 0; }
+
+.section-contact {
+  padding-bottom: 18rem; }

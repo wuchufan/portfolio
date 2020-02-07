@@ -3,6 +3,8 @@
 //layout
 @import './layout/header';
 @import './layout/flexbox-column';
+@import './layout/flexbox-row';
+@import './layout/footer';
 
 //base
 @import './base/base';
@@ -14,6 +16,8 @@
 @import './components/button';
 @import './components/icons-box';
 @import './components/card';
+@import './components/contact';
+@import './components/navigation';
 
 //pages
 @import './pages/home';

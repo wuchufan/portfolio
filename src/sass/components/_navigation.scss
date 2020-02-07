@@ -1,0 +1,23 @@
+.navigation{
+  &__list{
+    display:flex;
+    flex-direction: row;
+
+  }
+  &__item{
+    list-style: none;
+
+    &:not(:last-child){
+      margin-right:3rem;
+    }
+
+    & a,
+    & a:link,
+    & a:visited{
+      text-decoration: none;
+      color:$color3;
+      font-family: $font-semibold;
+      font-size: 2rem;
+    }
+  }
+}

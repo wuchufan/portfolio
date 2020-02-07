@@ -1,0 +1,11 @@
+.footer{
+  height:7rem;
+  background-color: $color2;
+  border-top:1px solid $color5;
+
+  &__copyright{
+    font-size: 2rem;
+    font-family: $font-semibold;
+    color:$color3;
+  }
+}
