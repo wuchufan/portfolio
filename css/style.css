@@ -14,6 +14,15 @@
   .header a {
     font-size: 1.5rem; }
 
+.container--column {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container--column__items {
+    margin-bottom: 10rem; }
+
 *,
 *::after,
 *::before {
@@ -39,6 +48,11 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 6.5rem; }
 
+.heading-thirdly {
+  color: #C5C6C7;
+  font-family: "Montserrat Black";
+  font-size: 3.5rem; }
+
 .paragraph-primary {
   color: #C5C6C7;
   font-size: 2.2rem;
@@ -50,11 +64,44 @@ body {
   font-family: "Montserrat Regular";
   letter-spacing: 1.1; }
 
+.paragraph-thirdly {
+  color: #45A29E;
+  font-size: 1.9rem;
+  font-family: "Montserrat Regular";
+  letter-spacing: 1.1; }
+
+.paragraph-italic {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #45A29E;
+  font-family: "Montserrat SemiBold"; }
+
+.text-highlight-primary {
+  color: #45A29E; }
+
+.text-highlight-secondary {
+  color: #C5C6C7; }
+
 .u-margin-bottom-tiny {
   margin-bottom: .7rem !important; }
 
+.u-margin-bottom-small {
+  margin-bottom: 3rem !important; }
+
+.u-margin-bottom-large {
+  margin-bottom: 10rem !important; }
+
+.u-margin-vertical-small {
+  margin: 1rem 0 !important; }
+
 .u-text-center {
   text-align: center !important; }
+
+@keyframes tooltipAppear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .btn, .btn:link, .btn:visited {
   letter-spacing: 1;
@@ -82,7 +129,7 @@ body {
 
 .icon-box {
   text-align: center;
-  margin: 2rem 0; }
+  margin: 6rem 0; }
 
 .icons {
   position: relative; }
@@ -91,10 +138,14 @@ body {
 
 .tooltip {
   display: none;
+  position: absolute;
   background-color: #C5C6C7;
-  padding: 5px;
-  font-size: 1.4rem;
-  border-radius: 2px; }
+  color: #1F2833;
+  padding: .5rem;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  min-width: 90px;
+  animation: tooltipAppear 0.2s ease forwards; }
   .tooltip::before {
     content: '';
     width: 15px;
@@ -108,12 +159,46 @@ body {
 
 .icons:hover .tooltip {
   display: flex;
+  opacity: 1;
+  font-family: "Montserrat SemiBold";
   justify-content: center;
   align-items: center;
   position: absolute;
   left: -25px;
   bottom: -35px; }
 
+.card {
+  width: 45rem; }
+  .card__image-box {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+    .card__image-box:hover .card__overlay {
+      transform: translateY(0); }
+  .card__image {
+    width: 100%; }
+  .card__overlay {
+    position: absolute;
+    transform: translateY(-35rem);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 12, 16, 0.75);
+    transition: transform 0.5s ease; }
+  .card__buttons-box {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .card__button {
+    font-family: "Montserrat SemiBold" !important;
+    font-size: 1.6rem;
+    margin: 0 2rem; }
+
 .section-skills {
+  padding: 18rem 0; }
+
+.section-projects {
   height: 100vh;
   padding: 18rem 0; }

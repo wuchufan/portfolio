@@ -1,0 +1,54 @@
+.heading-primary{
+  color:$color3;
+  font-family:'Poppins', sans-serif;
+  text-shadow: .6rem .6rem $color1;
+  font-size: 8rem;
+}
+
+.heading-secondary{
+  color:$color3;
+  font-family: 'Poppins', sans-serif;
+  font-size:6.5rem;
+}
+
+.heading-thirdly{
+  color:$color3;
+  font-family: $font-black;
+  font-size:3.5rem;
+}
+
+
+.paragraph-primary{
+  color:$color3;
+  font-size: 2.2rem;
+  font-family: $font-regular;
+}
+
+.paragraph-secondary{
+  color:$color5;
+  font-size:2.2rem;
+  font-family: $font-regular;
+  letter-spacing: 1.1;
+}
+
+.paragraph-thirdly{
+  color:$color5;
+  font-size:1.9rem;
+  font-family:$font-regular;
+  letter-spacing:1.1;
+}
+
+.paragraph-italic{
+  font-style:italic;
+  font-size: 1.4rem;
+  color:$color5;
+  font-family: $font-semibold;
+}
+
+.text-highlight-primary{
+   color:$color5;
+}
+
+.text-highlight-secondary{
+  color:$color3;
+}

@@ -1,22 +1,28 @@
 .icon-box{
   text-align: center;
-  margin:2rem 0;
+  margin:6rem 0;
 }
 
 
 .icons{
+  position:relative;
   &:not(:last-child){
     margin-right:1rem;
   }
-  position:relative;
+
 }
 
 .tooltip{
   display:none;
+  position:absolute;
   background-color: $color3;
-  padding: 5px;
-  font-size: 1.4rem;
+  color:$color2;
+  padding: .5rem;
+  font-size: 1.2rem;
   border-radius: 2px;
+  min-width:90px;
+  animation:tooltipAppear 0.2s ease forwards;
+
 
 
 
@@ -34,10 +40,14 @@
 }
 .icons:hover .tooltip {
   display: flex;
+  opacity:1;
+  font-family: "Montserrat SemiBold";
   justify-content: center;
   align-items: center;
   position: absolute;
   left: -25px;
   bottom: -35px;
+
+
 
 }
