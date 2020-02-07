@@ -1,0 +1,43 @@
+.icon-box{
+  text-align: center;
+  margin:2rem 0;
+}
+
+
+.icons{
+  &:not(:last-child){
+    margin-right:1rem;
+  }
+  position:relative;
+}
+
+.tooltip{
+  display:none;
+  background-color: $color3;
+  padding: 5px;
+  font-size: 1.4rem;
+  border-radius: 2px;
+
+
+
+  &::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    z-index: -1;
+    position: absolute;
+    background-color: $color3;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+.icons:hover .tooltip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -25px;
+  bottom: -35px;
+
+}
