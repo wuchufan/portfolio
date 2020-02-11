@@ -244,7 +244,8 @@ body {
   font-size: 1.2rem;
   border-radius: 2px;
   min-width: 90px;
-  animation: tooltipAppear 0.2s ease forwards; }
+  animation: tooltipAppear 0.2s ease forwards;
+  z-index: 100; }
   .tooltip::before {
     content: '';
     width: 15px;
