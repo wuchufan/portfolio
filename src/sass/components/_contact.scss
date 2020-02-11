@@ -1,0 +1,19 @@
+.contact{
+
+  &__text-box{
+    @include responsive(tab-port){
+      margin-bottom:10rem !important;
+    }
+
+
+  }
+  &__item{
+
+  &:not(:last-child){
+    @include responsive(tab-port){
+      margin-bottom:3rem;
+    }
+  }
+  }
+
+}

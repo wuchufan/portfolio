@@ -9,6 +9,28 @@
 
 html{
   font-size:62.5%;
+  @include responsive(4k){
+    font-size: 80%;
+  }
+  @include responsive(laptop-l){ //1rem = 9.5px
+    font-size:59.37%;
+  }
+  @include responsive(tab-land){ //1rem = 9px
+    font-size:56.25%;
+  }
+  @include responsive(tab-port){ //1rem = 8px
+    font-size:50%;
+  }
+  @include responsive(phone-l){
+    font-size:40%;
+  }
+
+  @include responsive(phone-m){
+    font-size:35%;
+  }
+  @include responsive(phone-s){
+    font-size:35%;
+  }
 }
 
 body{

@@ -3,6 +3,12 @@
   font-family:'Poppins', sans-serif;
   text-shadow: .6rem .6rem $color1;
   font-size: 8rem;
+  @include responsive(tab-port){
+    font-size: 7rem;
+  }
+  @include responsive(phone-m){
+    font-size: 5rem;
+  }
 }
 
 .heading-secondary{

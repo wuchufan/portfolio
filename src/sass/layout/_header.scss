@@ -5,11 +5,36 @@
  -webkit-clip-path:polygon(0 0,100% 0,85% 75vh,0 100%);
  clip-path:polygon(0 0,100% 0,85% 75vh,0 100%);
 
+
+ @include responsive(tab-land){
+   -webkit-clip-path:polygon(0 0,100% 0,90% 75vh,0 100%);
+   clip-path:polygon(0 0,100% 0,90% 75vh,0 100%);
+ }
+ @include responsive(tab-port){
+   -webkit-clip-path:polygon(0 0,100% 0,100% 75vh,0 100%);
+   clip-path:polygon(0 0,100% 0,100% 75vh,0 100%);
+ }
+
  &__text-box{
    position:absolute;
    top:40%;
    left:45%;
    transform:translate(-50%,-50%);
+
+   @include responsive(tab-land){
+     width:70%;
+     left:50%;
+   }
+   @include responsive(tab-port){
+     left:50%;
+     width:80%;
+     text-align: center;
+   }
+   @include responsive(phone-l){
+     width:90%;
+   }
+
+
  }
 
    &__text--span{
@@ -18,5 +43,8 @@
 
    & a{
      font-size:1.5rem;
+     @include responsive(phone-l){
+       font-size:2rem;
+     }
    }
  }
