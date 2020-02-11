@@ -1,6 +1,10 @@
 .card{
 
   width:45rem;
+  @include responsive(phone-l){
+    width:90%;
+    margin:auto auto;
+  }
 
   &-box{
     opacity:0;
@@ -30,7 +34,7 @@
 
   &__overlay{
     position:absolute;
-    transform:translateY(-35rem);
+    transform:translateY(-100%);
     width:100%;
     height:100%;
     background-color: rgba($color1,0.75);

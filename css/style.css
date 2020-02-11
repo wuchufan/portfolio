@@ -268,6 +268,10 @@ body {
 
 .card {
   width: 45rem; }
+  @media (max-width: 37.5em) {
+    .card {
+      width: 90%;
+      margin: auto auto; } }
   .card-box {
     opacity: 0;
     transform: translateY(30px);
@@ -286,7 +290,7 @@ body {
     width: 100%; }
   .card__overlay {
     position: absolute;
-    transform: translateY(-35rem);
+    transform: translateY(-100%);
     width: 100%;
     height: 100%;
     background-color: rgba(11, 12, 16, 0.75);
