@@ -6,15 +6,6 @@
     margin:auto auto;
   }
 
-  &-box{
-    opacity:0;
-    transform:translateY(30px);
-    transition:all 0.3s ease;
-
-    &--active{
-      @include fadeIn
-    }
-  }
 
   &__image-box{
     position:relative;

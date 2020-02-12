@@ -41,10 +41,21 @@
      color:$color5;
    }
 
+
+   &__text-title{
+     animation:fadeInLeft 1s ease backwards;
+   }
+
+   &__text-paragraph{
+     animation:fadeInRight 1s ease backwards;
+   }
+
    & a{
      font-size:1.5rem;
+     animation:fadeInBottom 1s ease 0.5s backwards;
      @include responsive(phone-l){
        font-size:2rem;
      }
    }
+
  }

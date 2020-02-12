@@ -47,8 +47,13 @@ $breakpoint argument choices:
         width: 90%; } }
   .header__text--span {
     color: #45A29E; }
+  .header__text-title {
+    animation: fadeInLeft 1s ease backwards; }
+  .header__text-paragraph {
+    animation: fadeInRight 1s ease backwards; }
   .header a {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    animation: fadeInBottom 1s ease 0.5s backwards; }
     @media (max-width: 37.5em) {
       .header a {
         font-size: 2rem; } }
@@ -202,6 +207,30 @@ body {
   100% {
     opacity: 1; } }
 
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 .btn, .btn:link, .btn:visited {
   letter-spacing: 1;
   text-decoration: none;
@@ -273,13 +302,6 @@ body {
     .card {
       width: 90%;
       margin: auto auto; } }
-  .card-box {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.3s ease; }
-    .card-box--active {
-      opacity: 1;
-      transform: translateY(0); }
   .card__image-box {
     position: relative;
     width: 100%;
@@ -332,28 +354,10 @@ body {
     font-size: 2rem; }
 
 .section-skills {
-  padding: 18rem 0;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.3s ease; }
-  .section-skills--active {
-    opacity: 1;
-    transform: translateY(0); }
+  padding: 18rem 0; }
 
 .section-projects {
-  padding: 14rem 0;
-  transform: translateY(30px);
-  opacity: 0;
-  transition: all 0.3s ease; }
-  .section-projects--active {
-    opacity: 1;
-    transform: translateY(0); }
+  padding: 14rem 0; }
 
 .section-contact {
-  padding-bottom: 18rem;
-  transform: translateY(30px);
-  opacity: 0;
-  transition: all 0.3s ease; }
-  .section-contact--active {
-    opacity: 1;
-    transform: translateY(0); }
+  padding-bottom: 18rem; }
