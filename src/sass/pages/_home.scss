@@ -1,12 +1,24 @@
 .section-skills{
   padding:18rem 0;
+  @include beforeFade
+  &--active{
+    @include fadeIn
+  }
 }
 
 
 .section-projects{
   padding:14rem 0;
+  @include beforeFade
+  &--active{
+    @include fadeIn
+  }
 }
 
 .section-contact{
   padding-bottom:18rem;
+  @include beforeFade
+  &--active{
+    @include fadeIn
+  }
 }

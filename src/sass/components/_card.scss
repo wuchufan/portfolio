@@ -1,11 +1,16 @@
 .card{
-
   width:45rem;
   @include responsive(phone-l){
     width:90%;
     margin:auto auto;
   }
 
+  &-box{
+    @include beforeFade
+    &--active{
+      @include fadeIn
+    }
+  }
 
   &__image-box{
     position:relative;

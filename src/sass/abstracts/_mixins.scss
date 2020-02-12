@@ -1,3 +1,9 @@
+@mixin beforeFade{
+  opacity:0;
+  transform:translateY(30px);
+  transition:all 0.4s ease;
+}
+
 @mixin fadeIn{
   opacity:1;
   transform:translateY(0);
@@ -23,13 +29,6 @@ $breakpoint argument choices:
 - big-desktop
 */
 
-// $responsive1920: 1920px;
-// $arrowsBreakPoint: 1300px;
-// $arrowsDisappear: 700px;
-// $responsive600: 600px;
-// $responsive550: 550px;
-// $responsive400: 400px;
-// $responsive350: 350px;
 
 @mixin responsive($breakpoint){
   @if $breakpoint == phone-s{ //350px
